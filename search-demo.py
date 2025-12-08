@@ -1,6 +1,10 @@
 from typing import Dict, Any
 from serpapi import SerpApiClient
 import os
+from dotenv import load_dotenv
+
+# 加载 .env 文件中的环境变量
+load_dotenv()
 
 def search(query: str) -> str:
     """
