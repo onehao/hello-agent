@@ -39,7 +39,7 @@ class HelloAgentsLLM:
             )
             
             # 处理流式响应
-            print("✅ 大语言模型响应成功:")
+            print(" 大语言模型响应成功:")
             collected_content = []
             for chunk in response:
                 content = chunk.choices[0].delta.content or ""
@@ -49,7 +49,7 @@ class HelloAgentsLLM:
             return "".join(collected_content)
 
         except Exception as e:
-            print(f"❌ 调用LLM API时发生错误: {e}")
+            print(f" 调用LLM API时发生错误: {e}")
             return None
 
 # --- 客户端使用示例 ---
