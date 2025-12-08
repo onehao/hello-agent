@@ -29,7 +29,7 @@ class HelloAgentsLLM:
         """
         调用大语言模型进行思考，并返回其响应。
         """
-        print(f"🧠 正在调用 {self.model} 模型...")
+        print(f" 正在调用 {self.model} 模型...")
         try:
             response = self.client.chat.completions.create(
                 model=self.model,
