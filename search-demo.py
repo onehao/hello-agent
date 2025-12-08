@@ -1,5 +1,6 @@
 from typing import Dict, Any
 from serpapi import SerpApiClient
+import os
 
 def search(query: str) -> str:
     """
